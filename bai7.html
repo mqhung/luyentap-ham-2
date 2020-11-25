@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap number</title>
+</head>
+<body>
+<script>
+    // tham tri
+//     function swapNumber(a,b){
+//         let swap;
+//         swap = num2;
+//         num2 = num1;
+//         num1 = swap;
+//     }
+//     let num1 = +prompt("Input number A");
+//     let num2 = +prompt("Input number B");
+// swapNumber(num1,num2);
+// document.write("A is " + num1 + "<br>" + "B is " + num2);
+//tham chieu
+    function swap(a,b) { //luong thuc thi lay 2 gia tri cua bien a,b o vi tri gan nhat( o day la trong ham).
+        let temp = a;
+        a = b;
+        b = temp;
+    }
+let a = 5;
+let b = 10;
+swap(a, b);
+document.write("a = " + a + ", b = " + b);
+</script>
+</body>
+</html>

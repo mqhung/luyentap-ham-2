@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Positive Integer</title>
+</head>
+<body>
+<script>
+    function isPositiveInteger(a){
+        if (number > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let number;
+    do{
+        number = +prompt("Input number");
+    } while (isPositiveInteger(number)==false);
+
+    document.write(isPositiveInteger(number));
+</script>
+</body>
+</html>

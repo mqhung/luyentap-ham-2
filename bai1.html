@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tinh binh phuong cua 1 so</h3>
+<p>Binh phuong cua so <input type="number" oninput="squareNum();" id="value"> la :<span id="result"></span>  </p>
+<p id="result2"></p>
+<script>
+    function squareNum(){
+        let number = document.getElementById('value').value;
+        let result = number * number;
+        document.getElementById('result').innerHTML = result ;
+        return result;
+    }
+
+    // let number = prompt("Nhap so");
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // let n = arr.length;
+    // for (i = 0; i < n; i++) {
+    //     if (number == arr[i]) {
+    //         for (k = i; k < n; k++) {
+    //             arr[k] = arr[k + 1];
+    //         }
+    //         arr[n - 1] = 0;
+    //     }
+    // }
+    // document.write(arr.join(" "));
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Area and Perimeter</h3>
+<label for="radius">Input Radius</label>
+<input type="number" oninput="calculate();" id="radius">
+<p><span id="peri"></span></p>
+<p><span id="area"></span></p>
+<p id="result"></p>
+<script>
+    function calculate() {
+        let r = +document.getElementById('radius').value;
+        let Pi = Math.PI;
+        if (r < 0){
+            document.getElementById('peri').innerHTML = " Try again"
+            document.getElementById('area').innerHTML = ""
+        } else {
+            document.getElementById('peri').innerHTML = "Perimeter is: " + 2 * Pi * r;
+            document.getElementById('area').innerHTML = "Area is: " +Pi * r * r;
+        }
+    }
+</script>
+</body>
+</html>
